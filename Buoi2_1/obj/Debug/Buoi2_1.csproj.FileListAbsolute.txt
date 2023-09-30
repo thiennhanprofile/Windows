@@ -1,0 +1,7 @@
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\bin\Debug\Buoi2_1.exe.config
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\bin\Debug\Buoi2_1.exe
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\bin\Debug\Buoi2_1.pdb
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\obj\Debug\Buoi2_1.csproj.AssemblyReference.cache
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\obj\Debug\Buoi2_1.csproj.CoreCompileInputs.cache
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\obj\Debug\Buoi2_1.exe
+D:\window\NguyenThienNhan_2121110116\Buoi2_1\obj\Debug\Buoi2_1.pdb
