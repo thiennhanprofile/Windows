@@ -86,14 +86,7 @@ namespace Buoi3_2
 
         private void txtMaSV_TextChanged(object sender, EventArgs e)
         {
-            string input = txtMaSV.Text;
 
-            if (input.Length != 10 || !input.StartsWith("21") || !input.Substring(2).All(char.IsDigit))
-            {
-                // Chuỗi không phù hợp với mẫu
-                MessageBox.Show("Mã sinh viên không hợp lệ. Vui lòng nhập lại theo mẫu 21xxxxxxxx (8 số sau 21).", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                e.Cancel = true; // Ngăn chặn việc thay đổi giá trị của MaskedTextBox
-            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
