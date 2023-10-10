@@ -56,6 +56,7 @@ namespace Buoi3_4
             {
                 string hoten = lbSinhVien.SelectedItems.ToString();
                 string khoa= cbKhoa.SelectedItem.ToString();
+
                 ListViewItem item= new ListViewItem(hoten);
                 item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = khoa });
                 LvLop.Items.Add(item);
@@ -119,6 +120,11 @@ namespace Buoi3_4
         }
 
         private void LvLop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbSinhVien_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
