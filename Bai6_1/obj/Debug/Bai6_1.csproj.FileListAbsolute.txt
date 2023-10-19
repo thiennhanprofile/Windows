@@ -1,0 +1,11 @@
+D:\window\NguyenThienNhan_2121110116\Bai6_1\bin\Debug\Bai6_1.exe.config
+D:\window\NguyenThienNhan_2121110116\Bai6_1\bin\Debug\Bai6_1.exe
+D:\window\NguyenThienNhan_2121110116\Bai6_1\bin\Debug\Bai6_1.pdb
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.csproj.AssemblyReference.cache
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.Form1.resources
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.frmKhoa.resources
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.Properties.Resources.resources
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.csproj.GenerateResource.cache
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.csproj.CoreCompileInputs.cache
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.exe
+D:\window\NguyenThienNhan_2121110116\Bai6_1\obj\Debug\Bai6_1.pdb

@@ -22,7 +22,6 @@ namespace Buoi01_7
                     Console.WriteLine(i);
                     Console.ReadKey();
                 }
-
             }
         }
 

@@ -6,38 +6,36 @@ using System.Threading.Tasks;
 
 namespace Buoi01_5
 {
-    internal class Program
+
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.Write("Nhap so luong sinh vien: ");
+            Console.Write("Nhập số lượng sinh viên: ");
             int n = int.Parse(Console.ReadLine());
 
-            string[] dsSinhVien = NhapSV(n);
-            XuatSV(dsSinhVien, n);
+            string[] dssinhvien = new string[n];
+
+            NhapSV(dssinhvien, n);
+
+            Console.WriteLine("Danh sách sinh viên sau khi nhập:");
+            XuatSV(dssinhvien, n);
+            Console.ReadLine();
         }
-
-        static string[] NhapSV(int n)
+        static void NhapSV(string[] dssinhvien, int n)
         {
-            string[] dsSinhVien = new string[n];
-
             for (int i = 0; i < n; i++)
             {
-                Console.Write("Nhap ho ten sinh vien: ");
-                dsSinhVien[i] = Console.ReadLine();
+                Console.Write($"Nhập họ tên sinh viên thứ {i + 1}: ");
+                dssinhvien[i] = Console.ReadLine();
             }
-
-            return dsSinhVien;
         }
 
-        static void XuatSV(string[] dsSinhVien, int n)
+        static void XuatSV(string[] dssinhvien, int n)
         {
-            Console.WriteLine("Danh sach sinh vien:");
-
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine("Sinh vien: {dsSinhVien[i]}");
-                Console.ReadKey();
+                Console.WriteLine($"Sinh viên thứ {i + 1}: {dssinhvien[i]}");
             }
         }
     }

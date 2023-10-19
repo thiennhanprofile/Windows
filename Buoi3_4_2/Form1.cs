@@ -53,19 +53,38 @@ namespace Buoi3_4_2
         private void btnThem_Click(object sender, EventArgs e)
         {
             string ban = cbBan.SelectedItem.ToString();
-            string tenmon = lvDSM.SelectedItems.ToString();
-            string soluong = lvDSM.SelectedItems.ToString();
-            string gia = lvDSM.SelectedItems.ToString();
+
+            // Kiểm tra xem có dòng nào được chọn không
+            if (lvDSM.SelectedItems.Count > 0)
+            {
+                // Lặp qua các dòng đã chọn
+                foreach (ListViewItem selectedItem in lvDSM.SelectedItems)
+                {
+                    string tenmon = selectedItem.SubItems[1].Text;
+
+                    string gia = selectedItem.SubItems[2].Text;
+                    int soluong = (int)numSoLuong.Value;
+                    decimal giaMoi = decimal.Parse(gia) * soluong;
 
 
-            ListViewItem item = new ListViewItem(ban);
-            item.SubItems.Add(tenmon);
-            item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = soluong });
-            item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = gia });
+                    ListViewItem item = new ListViewItem(ban);
+                    item.SubItems.Add(tenmon);
+                    item.SubItems.Add(new ListViewItem.ListViewSubItem(item, soluong.ToString()));
+                    item.SubItems.Add(new ListViewItem.ListViewSubItem(item, giaMoi.ToString()));
+                    lvDSDM.Items.Add(item);
+                }
+            }
+        }
 
-            lvDSDM.Items.Add(item);
-
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (lvDSDM.SelectedItems.Count > 0)
+            {
+                foreach (ListViewItem selectedItem in lvDSDM.SelectedItems)
+                {
+                    lvDSDM.Items.Remove(selectedItem);
+                }
+            }
         }
     }
 }

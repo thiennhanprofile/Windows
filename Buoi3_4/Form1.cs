@@ -27,7 +27,6 @@ namespace Buoi3_4
             lbSinhVien.Items.Add("Nguyễn Hữu Danh");
             lbSinhVien.Items.Add("Nguyễn Văn En");
             cbKhoa.SelectedIndex = 0;
-
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -52,16 +51,19 @@ namespace Buoi3_4
 
         private void btnChonSV_Click(object sender, EventArgs e)
         {
-            if(chon !=1)
+            if (chon != 1)
             {
-                string hoten = lbSinhVien.SelectedItems.ToString();
-                string khoa= cbKhoa.SelectedItem.ToString();
+                if (lbSinhVien.SelectedItem != null) 
+                {
+                    string hoten = lbSinhVien.SelectedItem.ToString();
+                    string khoa = cbKhoa.SelectedItem.ToString();
 
-                ListViewItem item= new ListViewItem(hoten);
-                item.SubItems.Add(new ListViewItem.ListViewSubItem() { Text = khoa });
-                LvLop.Items.Add(item);
-                lbSinhVien.Items.RemoveAt(lbSinhVien.SelectedIndex);
-                chon = -1;
+                    ListViewItem item = new ListViewItem(hoten);
+                    item.SubItems.Add(new ListViewItem.ListViewSubItem(item, khoa));
+                    LvLop.Items.Add(item);
+                    lbSinhVien.Items.RemoveAt(lbSinhVien.SelectedIndex);
+                    chon = -1;
+                }
             }
         }
 
@@ -74,6 +76,7 @@ namespace Buoi3_4
                 string hoten = lbSinhVien.Items[vt].ToString();
                 ListViewItem item= new ListViewItem(hoten) ;
                 item.SubItems.Add (new ListViewItem.ListViewSubItem() { Text = khoa});
+
                 LvLop.Items.Add(item);
             }
             lbSinhVien.Items.Clear();
@@ -127,6 +130,17 @@ namespace Buoi3_4
         private void lbSinhVien_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbSinhVien_Click(object sender, EventArgs e)
+        {
+            if (lbSinhVien.SelectedItem != null)
+            {
+                string selectedStudent = lbSinhVien.SelectedItem.ToString();
+                // Làm điều gì đó với dòng đã chọn
+                // Ví dụ: Hiển thị thông tin của dòng đã chọn trong một MessageBox
+                MessageBox.Show("Bạn đã chọn: " + selectedStudent);
+            }
         }
     }
 }

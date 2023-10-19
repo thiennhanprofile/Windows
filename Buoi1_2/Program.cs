@@ -18,10 +18,11 @@ namespace Buoi01_2
         static void Main(string[] args)
         {
             int thang, nam, songay;
-            Console.WriteLine("Nhap thang:");
+            Console.WriteLine("Nhập tháng (1-12):");
             thang = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Nhap nam:");
+            Console.WriteLine("Nhập năm:");
             nam = Convert.ToInt32(Console.ReadLine());
+            
             switch (thang)
             {
                 case 1:
@@ -46,10 +47,10 @@ namespace Buoi01_2
                         songay = 28;
                     break;
                 default:
-                    Console.WriteLine("Thang khong hop le");
+                    Console.WriteLine("Tháng không hợp lệ");
                     return;
             }
-            Console.WriteLine("So ngay: " + songay);
+            Console.WriteLine("Số ngày: " + songay);
             Console.ReadKey();
         }
     }

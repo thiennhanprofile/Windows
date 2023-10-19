@@ -31,9 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lvDSM = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cbBan = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numSoLuong = new System.Windows.Forms.NumericUpDown();
             this.button2 = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,12 +47,9 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,10 +90,25 @@
             this.lvDSM.UseCompatibleStateImageBehavior = false;
             this.lvDSM.View = System.Windows.Forms.View.Details;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "STT";
+            this.columnHeader5.Width = 40;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "TÊN MÓN";
+            this.columnHeader6.Width = 90;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "GIÁ";
+            this.columnHeader7.Width = 80;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cbBan);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.numSoLuong);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Controls.Add(this.label3);
@@ -124,23 +139,23 @@
             this.cbBan.Size = new System.Drawing.Size(136, 24);
             this.cbBan.TabIndex = 3;
             // 
-            // numericUpDown1
+            // numSoLuong
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(10, 144);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numSoLuong.Location = new System.Drawing.Point(10, 144);
+            this.numSoLuong.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.numSoLuong.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 2;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numSoLuong.Name = "numSoLuong";
+            this.numSoLuong.Size = new System.Drawing.Size(120, 22);
+            this.numSoLuong.TabIndex = 2;
+            this.numSoLuong.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -154,6 +169,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Hủy";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnThem
             // 
@@ -229,21 +245,6 @@
             this.columnHeader4.Text = "Gía";
             this.columnHeader4.Width = 90;
             // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "STT";
-            this.columnHeader5.Width = 40;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "TÊN MÓN";
-            this.columnHeader6.Width = 90;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "GIÁ";
-            this.columnHeader7.Width = 80;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -259,7 +260,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,7 +273,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListView lvDSM;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numSoLuong;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

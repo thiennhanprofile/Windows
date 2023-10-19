@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Buoi02_1
+namespace Buoi2_1
 {
     internal class Program
     {

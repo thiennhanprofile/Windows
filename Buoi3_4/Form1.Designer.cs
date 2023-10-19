@@ -59,9 +59,9 @@
             this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(17, 16);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1033, 123);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -70,7 +70,7 @@
             // btnThem
             // 
             this.btnThem.Location = new System.Drawing.Point(688, 33);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(128, 50);
             this.btnThem.TabIndex = 2;
@@ -81,7 +81,7 @@
             // btnThoat
             // 
             this.btnThoat.Location = new System.Drawing.Point(877, 33);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(128, 50);
             this.btnThoat.TabIndex = 2;
@@ -92,7 +92,7 @@
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(141, 44);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(368, 22);
             this.txtHoTen.TabIndex = 1;
@@ -111,9 +111,9 @@
             // 
             this.groupBox2.Controls.Add(this.lbSinhVien);
             this.groupBox2.Location = new System.Drawing.Point(17, 148);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(295, 366);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -124,10 +124,11 @@
             this.lbSinhVien.FormattingEnabled = true;
             this.lbSinhVien.ItemHeight = 16;
             this.lbSinhVien.Location = new System.Drawing.Point(8, 25);
-            this.lbSinhVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbSinhVien.Margin = new System.Windows.Forms.Padding(4);
             this.lbSinhVien.Name = "lbSinhVien";
             this.lbSinhVien.Size = new System.Drawing.Size(277, 324);
             this.lbSinhVien.TabIndex = 0;
+            this.lbSinhVien.Click += new System.EventHandler(this.lbSinhVien_Click);
             this.lbSinhVien.SelectedIndexChanged += new System.EventHandler(this.lbSinhVien_SelectedIndexChanged);
             // 
             // groupBox3
@@ -139,9 +140,9 @@
             this.groupBox3.Controls.Add(this.cbKhoa);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(320, 148);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(259, 366);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -150,7 +151,7 @@
             // btnXoaAll
             // 
             this.btnXoaAll.Location = new System.Drawing.Point(51, 262);
-            this.btnXoaAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaAll.Name = "btnXoaAll";
             this.btnXoaAll.Size = new System.Drawing.Size(157, 28);
             this.btnXoaAll.TabIndex = 2;
@@ -161,7 +162,7 @@
             // btnThemAll
             // 
             this.btnThemAll.Location = new System.Drawing.Point(51, 150);
-            this.btnThemAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThemAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemAll.Name = "btnThemAll";
             this.btnThemAll.Size = new System.Drawing.Size(157, 28);
             this.btnThemAll.TabIndex = 2;
@@ -172,7 +173,7 @@
             // btnXoaSV
             // 
             this.btnXoaSV.Location = new System.Drawing.Point(51, 206);
-            this.btnXoaSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoaSV.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaSV.Name = "btnXoaSV";
             this.btnXoaSV.Size = new System.Drawing.Size(157, 28);
             this.btnXoaSV.TabIndex = 2;
@@ -183,7 +184,7 @@
             // btnChonSV
             // 
             this.btnChonSV.Location = new System.Drawing.Point(51, 94);
-            this.btnChonSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChonSV.Margin = new System.Windows.Forms.Padding(4);
             this.btnChonSV.Name = "btnChonSV";
             this.btnChonSV.Size = new System.Drawing.Size(157, 28);
             this.btnChonSV.TabIndex = 2;
@@ -203,7 +204,7 @@
             "Nhà hàng khách sạn",
             "Kế toán"});
             this.cbKhoa.Location = new System.Drawing.Point(13, 46);
-            this.cbKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbKhoa.Margin = new System.Windows.Forms.Padding(4);
             this.cbKhoa.Name = "cbKhoa";
             this.cbKhoa.Size = new System.Drawing.Size(236, 24);
             this.cbKhoa.TabIndex = 1;
@@ -222,9 +223,9 @@
             // 
             this.groupBox4.Controls.Add(this.LvLop);
             this.groupBox4.Location = new System.Drawing.Point(587, 148);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(464, 366);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
@@ -237,7 +238,7 @@
             this.khoa});
             this.LvLop.HideSelection = false;
             this.LvLop.Location = new System.Drawing.Point(9, 25);
-            this.LvLop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LvLop.Margin = new System.Windows.Forms.Padding(4);
             this.LvLop.Name = "LvLop";
             this.LvLop.Size = new System.Drawing.Size(445, 324);
             this.LvLop.TabIndex = 0;
@@ -263,7 +264,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "THÊM SINH VIÊN VÀO LỚP";
             this.Load += new System.EventHandler(this.Form1_Load);
